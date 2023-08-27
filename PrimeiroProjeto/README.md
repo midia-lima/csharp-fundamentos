@@ -1,3 +1,28 @@
+## List<T>
+
+Representa uma lista fortemente tipada de objetos que podem ser acessados por índice. Fornece métodos para pesquisar, classificar e manipular listas.
+
+Para criar uma lista no C#
+
+```cs
+List<string> listaDasBandas = new List<string>();
+```
+
+Adiciona elementos na lista
+
+```cs
+listaDasBandas.Add("");
+```
+
+Percorre a lista
+
+```cs
+foreach (string banda in bandasRegistradas)
+{
+  Console.WriteLine($"Banda: {banda}");
+}
+```
+
 ## Dictionary<Key,Value>
 
 Representa uma coleção de chaves e valores.
@@ -42,8 +67,6 @@ A chave a ser localizada no Dictionary<Key,Value>
 Use o método PadLeft() para preencher uma string com um caractere especificado à esquerda até o comprimento desejado.
 
 ### Parâmetros
-___
-
 **params1**
 
 É o comprimento desejado da string resultante que inclui a string original e espaços de preenchimento adicionais.
@@ -69,3 +92,7 @@ Console.WriteLine(result);
 ## ReadKey()
 
 Faz o programa aguardar o pressionamento de uma tecla e impede a tela até que uma tecla seja pressionada.
+
+## int.Parse()
+
+Usados para converter uma representação de string de um número em um inteiro.
