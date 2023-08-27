@@ -30,12 +30,20 @@ bandasRegistradas.Add("Ana Castela", new List<int>());
 bandasRegistradas.Add("Marília Mendonça", new List<int> { 10, 9, 8 });
 ```
 
+## Dictionary<Key,Value>.ContainsKey(Key)
+
+Determina se o Dictionary<Key,Value> atual contém a chave especificada.
+
+### Parâmetros
+A chave a ser localizada no Dictionary<Key,Value>
 
 ## PadLeft(params1, params2)
 
-Use o método PadLeft()para preencher uma string com um caractere especificado à esquerda até o comprimento desejado.
+Use o método PadLeft() para preencher uma string com um caractere especificado à esquerda até o comprimento desejado.
 
 ### Parâmetros
+___
+
 **params1**
 
 É o comprimento desejado da string resultante que inclui a string original e espaços de preenchimento adicionais.
@@ -57,3 +65,7 @@ var invoiceNumber = 1234;
 var result = invoiceNumber.ToString().PadLeft(6, '0');
 Console.WriteLine(result);
 ```
+
+## ReadKey()
+
+Faz o programa aguardar o pressionamento de uma tecla e impede a tela até que uma tecla seja pressionada.
