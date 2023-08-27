@@ -1,15 +1,17 @@
 ﻿Musica musicaUm = new Musica();
-
 musicaUm.nome = "Everybody's Changing";
 musicaUm.artista = "Keane";
-
-Console.WriteLine($"Nome: {musicaUm.nome}");
-Console.WriteLine($"Artista: {musicaUm.artista}");
+musicaUm.duracao = 335;
+musicaUm.disponivel = true;
 
 Musica musicaDois = new Musica();
-
 musicaDois.nome = "Unforgettable";
 musicaDois.artista = "Natalie Cole";
+musicaDois.duracao = 330;
+musicaDois.disponivel = false;
+
+musicaUm.ExibirFichaTecnica();
+musicaDois.ExibirFichaTecnica();
 
 
 

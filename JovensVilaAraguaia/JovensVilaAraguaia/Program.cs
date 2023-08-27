@@ -1,5 +1,5 @@
 ﻿string msgDeBoasVindas = "Boas vinda ao Cadastro de Mocidades";
-List<string> listaDaMocidadeCadastrada = new List<string> { "Vitória Rocha", "Sofia Grigorio" };
+List<string> listaDaMocidadeCadastrada = new List<string> { "Vitória", "Sofia" };
 
 
 void ExibirLogo()

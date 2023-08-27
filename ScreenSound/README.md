@@ -7,6 +7,10 @@
 
 Uma classe "é um conjunto ou um conjunto de objetos que compartilham de propriedades e métodos em comum."
 
+**Classe define**
+- Estado
+- Comportamento
+
 ```cs
 class Musica
 {
@@ -15,6 +19,24 @@ class Musica
 	int duracao;
 	bool disponivel;
 }
+```
+
+**Objeto é uma instância de uma classe**
+- É possível criar várias instâncias
+- Cada instância possui diferentes estados
+
+```cs
+Musica musicaUm = new Musica();
+musicaUm.nome = "Everybody's Changing";
+musicaUm.artista = "Keane";
+musicaUm.duracao = 335;
+musicaUm.disponivel = true;
+
+Musica musicaDois = new Musica();
+musicaDois.nome = "Unforgettable";
+musicaDois.artista = "Natalie Cole";
+musicaDois.duracao = 330;
+musicaDois.disponivel = false;
 ```
 
 ## Modificadores de Acesso
@@ -29,3 +51,34 @@ Palavras chaves que declara o nível de acesso.
 | protected internal  | Membros        | Acesso para todos do mesmo Assembly e Classes filhas|
 | private             | Membros        | Acesso somente para a classe|
 | protected private   | Membros        | Acesso para classe e seus filhos|
+
+## Métodos
+Um método que representa um comportamento de qualquer objeto da classe
+
+```cs
+class Musica
+{
+	public string nome;
+	public string artista;
+	public int duracao;
+	public bool disponivel;
+
+	// Método
+	public void ExibirFichaTecnica()
+	{
+		Console.WriteLine($"Nome: {nome}");
+        Console.WriteLine($"Artista: {artista}");
+		Console.WriteLine($"Duracao: {duracao}");
+		Console.WriteLine($"Disponivel: {disponivel}");
+
+		if (disponivel) 
+		{
+            Console.WriteLine("Disponível no plano");
+        }
+		else
+		{
+			Console.WriteLine("Adquira o plano Plus+");
+        }
+	}
+}
+```
