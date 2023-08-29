@@ -67,18 +67,46 @@ class Musica
 	public void ExibirFichaTecnica()
 	{
 		Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Artista: {artista}");
+    Console.WriteLine($"Artista: {artista}");
 		Console.WriteLine($"Duracao: {duracao}");
 		Console.WriteLine($"Disponivel: {disponivel}");
 
 		if (disponivel) 
 		{
-            Console.WriteLine("Disponível no plano");
-        }
+      Console.WriteLine("Disponível no plano");
+    }
 		else
 		{
-			Console.WriteLine("Adquira o plano Plus+");
-        }
+			Console.WriteLine("Adquira o plano Plus+");        
+		}
 	}
 }
 ```
+
+## Auto-Implemented Properties
+**Atributo** é uma variável declarada dentro de uma classe que armazena dados associados a uma instância específica desta classe.
+
+**Propriedade** é uma abstração que fornece um meio de acessar e modificar os valores dos atributos de uma classe, encapsulando a lógica de leitura e escrita.
+
+Embora haja uma relação entre **atributos (fields)** e **propriedades (properties)** em C#, eles são conceitos distintos e oferecem diferentes recursos e funcionalidades para o desenvolvimento de classes e objetos.
+
+Escreve: set
+
+Lê: get
+
+```cs
+class Musica
+{
+	public string nome { get; set; }
+	public string artista { get; set; }
+	public int duracao { get; set; }
+	public bool disponivel { get; set; }	
+}
+```
+
+## Funções Lambda
+Em C# chamamos a arrow function de Lambda
+
+
+
+

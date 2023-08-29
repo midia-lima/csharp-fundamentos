@@ -1,14 +1,16 @@
 ﻿Musica musicaUm = new Musica();
-musicaUm.nome = "Everybody's Changing";
-musicaUm.artista = "Keane";
-musicaUm.duracao = 335;
-musicaUm.disponivel = true;
+musicaUm.Nome = "Everybody's Changing";
+musicaUm.Artista = "Keane";
+musicaUm.Duracao = 335;
+musicaUm.Disponivel = true;
+Console.WriteLine(musicaUm.DescricaoResumida);
+
 
 Musica musicaDois = new Musica();
-musicaDois.nome = "Unforgettable";
-musicaDois.artista = "Natalie Cole";
-musicaDois.duracao = 330;
-musicaDois.disponivel = false;
+musicaDois.Nome = "Unforgettable";
+musicaDois.Artista = "Natalie Cole";
+musicaDois.Duracao = 330;
+musicaDois.Disponivel = false;	
 
 musicaUm.ExibirFichaTecnica();
 musicaDois.ExibirFichaTecnica();
