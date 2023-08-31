@@ -105,8 +105,35 @@ class Musica
 ```
 
 ## Funções Lambda
-Em C# chamamos a arrow function de Lambda
+Em C# chamamos a arrow function de Lambd
 
+## Sum()
+Computa a soma de uma sequência de valores numéricos.
+
+```cs
+List<float> numbers = new List<float> { 43.68F, 1.25F, 583.7F, 6.5F };
+float sum = numbers.Sum();
+Console.WriteLine("The sum of the numbers is {0}.", sum);
+```
+
+## Composição
+Relacionamento entre classes em que uma classe possui uma instância de outra classe como um de seus membros.
+```cs
+public class Pessoa
+{
+	public string Nome { get; set; }
+	public Endereco Endereco { get; set; }
+
+	public void ExibirInformacoes()
+	{
+		Console.WriteLine($"Nome: {Nome}");
+		Console.WriteLine($"Endereço: {Endereco.Rua}, {Endereco.Cidade}, {Endereco.Estado}");
+	}
+}
+```
+
+## Construtor
+Usar uma classe sem construtor no C# não garante que o objeto seja inicializado corretamente. Sem um construtor, não há um ponto de entrada definido para configurar o estado inicial do objeto. Isso pode levar a objetos em um estado inválido ou inconsistente, o que pode resultar em comportamento inesperado ou erros em tempo de execução.
 
 
 
