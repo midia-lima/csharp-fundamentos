@@ -135,5 +135,8 @@ public class Pessoa
 ## Construtor
 Usar uma classe sem construtor no C# não garante que o objeto seja inicializado corretamente. Sem um construtor, não há um ponto de entrada definido para configurar o estado inicial do objeto. Isso pode levar a objetos em um estado inválido ou inconsistente, o que pode resultar em comportamento inesperado ou erros em tempo de execução.
 
+## OrderBy()
+Classificar os valores de uma lista ou coleção em ordem crescente
+
 
 

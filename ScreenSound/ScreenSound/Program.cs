@@ -1,4 +1,15 @@
-﻿Banda marron5 = new Banda("Marron 5");
+﻿using ScreenSound;
+
+Episodio episodio934 = new Episodio("Os Tremas nos Us", "2:06:14");
+episodio934.AdicionarConvidados("Tiago Pavinatto");
+
+
+Podcast inteligencialtda = new Podcast("Rogrio Vilela", "Inteligência Ltda", 595);
+inteligencialtda.AdicionarEpisodio(episodio934);
+inteligencialtda.ExibirDetalhes();
+
+/*
+Banda marron5 = new Banda("Marron 5");
 
 Album albumSongsAboutJane = new Album("Songs About Jane");
 
@@ -28,3 +39,6 @@ musicaDois.ExibirFichaTecnica();
 albumSongsAboutJane.ExibirMusicaDoAlbum();
 marron5.ExibirDiscografia();
 nomeGenero.ExibirGenero();
+*/
+
+
