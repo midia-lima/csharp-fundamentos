@@ -1,4 +1,6 @@
-﻿class Musica
+﻿namespace ScreenSound.Modelos;
+
+class Musica
 {
 	public Musica(Banda artista, string nome)
 	{
@@ -19,7 +21,7 @@
 		Console.WriteLine($"Artista: {Artista.Nome}");
 		Console.WriteLine($"Duracao: {Duracao}");
 		Console.WriteLine($"Disponivel: {Disponivel}");
-		
+
 
 		if (Disponivel)
 		{

@@ -1,13 +1,9 @@
 ﻿string msgDeBoasVindas = "Boas vindas ao Screen Sound";
 
-// List<string> listaDasBandas = new List<string> { "U2", "Pity" };
-
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
 
 bandasRegistradas.Add("Ana Castela", new List<int> { 10, 9, 8 });
 bandasRegistradas.Add("Marília Mendonça", new List<int>());
-
-
 
 void ExibirLogo()
 {
